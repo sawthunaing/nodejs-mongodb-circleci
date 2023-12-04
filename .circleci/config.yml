@@ -23,7 +23,7 @@ jobs:
           docker login -u "$DOCKERHUB_USERNAME" -p "$DOCKERHUB_PWD"
           # Push the Docker image to the registry
           docker push phogatone/nodejs:$IMAGETAG
- 
+
 workflows:
   version: 2
   nodejs-build-flow:
