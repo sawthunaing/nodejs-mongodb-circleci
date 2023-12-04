@@ -28,12 +28,4 @@ jobs:
             # Push the Docker image to the registry
             docker push phogatone/nodejs:$IMAGETAG
 
-workflows:
-  version: 2
-  nodejs-build-flow:
-    jobs:
-    - build:
-        filters:
-          branches:
-            only:
-            - main
+
