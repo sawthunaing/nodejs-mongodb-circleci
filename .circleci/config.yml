@@ -5,10 +5,10 @@ jobs:
   build:
     docker:
       - image: cimg/node:14.17
-
+ 
     steps:
       - checkout
-      
+      - setup_remote_docker: 20.10.7
       - run:
            name: Build and push Docker image to DockerHub
            command: |
