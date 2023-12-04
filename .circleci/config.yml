@@ -40,7 +40,4 @@ workflows:
   nodejs-build-workflow:
     jobs:
       build-and-push-img :
-      filters:
-          branches:
-            only:
-            - main
+  
